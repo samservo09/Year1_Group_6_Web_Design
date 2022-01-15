@@ -1,1 +1,170 @@
-/*Lagay niyo lang here mga syles niyo guys haha*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.home-container ul {
+    list-style: none;
+    background-color: #0C0032;
+    padding-top: 60px;
+    padding-left: 500px;
+    height: 693px;
+    overflow: hidden;
+}
+
+.home-container ul li {
+    display: inline-block;
+    padding-left: 60px;
+}
+
+.home-container ul li a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.home-container ul li a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: top right;
+    transition: transform 0.4s ease-out;
+}
+.home-container ul li a:hover:after {
+    transform: scaleX(1);
+    transform-origin: top left;
+  }
+
+.home-container .vertical-line {
+    position:absolute;
+    bottom: 630px;
+    left: 83%;
+    border-left: 6px solid white;
+    height: 90px;
+}
+
+.home-container ul .logo {
+    position: absolute;
+    left: 70px;
+    top: 49px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+}
+
+.home-container ul .logo span{
+    color: #70878D;
+}
+
+.home-container ul p {
+    position: relative;
+    bottom: 50px;
+    left: 800px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.home-container ul p:hover {
+    color: #70878D;
+}
+
+
+.home-container .banner a {
+    position: absolute;
+    bottom: 20%;
+    left: 16.5%;
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    border-style: solid;
+    border-radius: 50px;
+    padding-top: 15px;
+    padding-right: 35px;
+    padding-bottom: 15px;
+    padding-left: 35px;
+    transition: ease-in 0.3s;
+}
+
+.home-container .banner a:hover {
+    background-color: white;
+    border-color: #0C0032;
+    color: #0C0032;
+}
+
+.home-container .banner img {
+    position: absolute;
+    left: 50%;
+    top: 130px;
+    width: 45%;
+    transition: 0.5s;
+    animation: opening 5s 1 ease-in ;
+}
+
+@keyframes opening {
+	from {
+        opacity: 0;
+      }
+}
+
+.home-container .banner img:hover {
+    transform:scale(1.05);
+}
+
+.banner .logo .first_text {
+    position: absolute;
+    bottom: 45%;
+    left: 8.5%;
+    color: #70878D;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    animation: first_text_anim 5s linear 1;
+}
+
+.banner .logo .second_text {
+    position: absolute; 
+    bottom: 40%;
+    left: 5.2%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    animation: second_text_anim 1s 5s linear 1 alternate both;
+}
+  
+@keyframes first_text_anim {
+	0%{
+	  color: white;
+	  margin-bottom: -40px;
+	}
+	30%{
+	  letter-spacing: 13px;
+	  margin-bottom: -40px;
+      left: 3%;
+	}
+	85%{
+	  letter-spacing: 8px;
+	  margin-bottom: -40px;
+	}
+  
+  }
+  
+  @keyframes second_text_anim {
+	from {
+	  opacity: 0;
+	}
+  }
