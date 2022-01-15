@@ -7,8 +7,43 @@
     <title>Document</title>
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">    
 </head>
 <body>
+     <div class="home-container">
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Mapping">Mapping</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#ContactUs">Contact Us</a></li> 
+            <h2 class="logo"><span>Co</span>Mission</h2>
+            <p><span id="date"></span></p>
+            <p><span id="time"></span></p>   
+        </ul>
+        <div class="vertical-line"></div>
+        <div class = "banner">
+            <div class="logo">
+                <span class="first_text"> CoMission </span>
+                <span class="second_text"> Your Commission is our big Mission.</span>
+            </div>
+            <a href="#ContactUs">Let's talk now!</a>
+            <img src="image/BannerImage.png" alt="illustration">
+        </div>
+    </div>
     
+    <script>
+        var currentDate = new Date();
+        var month = currentDate.toLocaleString('default', { month: 'long' });
+        var day = currentDate.getDate();
+        var year = currentDate.getFullYear();
+        const dt = month + ' ' + day + ', ' + year;
+        const time = new Date();
+
+        document.getElementById("date").innerHTML = dt;
+        document.getElementById("time").innerHTML = time.toLocaleTimeString();
+    </script>
 </body>
 </html>
