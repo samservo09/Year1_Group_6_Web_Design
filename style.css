@@ -54,14 +54,8 @@
 .home-container ul .logo {
     position: absolute;
     left: 70px;
-    top: 49px;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
-}
-
-.home-container ul .logo span{
-    color: #70878D;
+    bottom: 565px;
+    width: 15%;
 }
 
 .home-container ul p {
