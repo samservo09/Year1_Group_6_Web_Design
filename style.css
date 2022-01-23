@@ -1,3 +1,5 @@
+
+/*HOME -styles*/
 * {
     padding: 0;
     margin: 0;
@@ -7,7 +9,7 @@
     list-style: none;
     background-color: #0C0032;
     padding-top: 60px;
-    padding-left: 500px;
+    padding-left: 300px;
     height: 693px;
     overflow: hidden;
 }
@@ -54,7 +56,7 @@
 .home-container ul .logo {
     position: absolute;
     left: 70px;
-    bottom: 565px;
+    bottom: 445px;
     width: 15%;
 }
 
@@ -130,9 +132,9 @@
 }
 
 .banner .logo .second_text {
-    position: absolute; 
+    position: absolute;
     bottom: 40%;
-    left: 5.2%;
+    left: 2%;
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 35px;
@@ -162,3 +164,366 @@
 	  opacity: 0;
 	}
   }
+/*/HOME -styles*/
+
+/*ABOUT - styles */
+* {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+p.round1 {
+    border: 3px solid white;
+    border-radius: 50px;
+    padding: 5px;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    padding-left: 10px;
+    font-size: x-large;
+    display: block;
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+p.round2 {
+    border: 3px solid white;
+    border-radius: 50px;
+    padding: 5px;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    padding-left: 10px;
+    font-size: x-large;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p.round3 {
+    border: 3px solid white;
+    border-radius: 50px;
+    padding: 5px;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    padding-left: 10px;
+    font-size: x-large;
+    display: block;
+    margin-left: 30px;
+    margin-right: auto;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+.col {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+
+p.round4 {
+    border: 3px solid white;
+    border-radius: 50px;
+    padding: 5px;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    padding-left: 10px;
+    font-size: x-large;
+    display: block;
+    margin-left: auto;
+    margin-right: -150px;
+}
+
+p.round5 {
+    border: 3px solid white;
+    border-radius: 50px;
+    padding: 5px;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    padding-left: 10px;
+    font-size: x-large;
+    display: block;
+    margin-left: auto;
+    margin-right: -150px;
+}
+               
+a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+p.round6 {
+    border: 10px; color :#0C0032; background-color: #fff;
+    border-radius: 50px;
+    padding: 10px;
+    width: 455px;
+    height: 50px;
+    text-align: center;
+    padding-left: 10px;
+    font-size: 25px;;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+}
+   
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/*SERVICES - styles*/
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #0C0032 !important;
+    border-radius: 75px !important;
+    height: 37px !important;
+    width: 150px !important;
+}
+
+.img-rounded{
+    border-radius: 20px !important;
+}
+
+.margin-left{
+    margin-left: 50px !important;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+.body-bg {
+    background-color: #0C0032;
+}
+
+.div-service-page{
+    background-color:#70878D;
+    padding: 10px 10px 10px 10px;
+    margin:10px 10px 10px 10px;
+}
+
+
+.card-style{
+    width: 18rem;
+    padding:10px 10px 0px 10px;
+}
+
+.text-services {
+    text-align:center;
+    color:#fff;
+    margin:auto;
+    padding-top:20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
+
+.btn{
+    align-items: center;
+}
+.card-text{
+    text-align: center;
+  }
+
+.card-title{
+    text-align: center;
+    font-weight: bold;
+}
+.card {
+    border-radius: 20%;
+}
+
+.content{
+  border-radius: 20%;
+}
+.name {
+    text-align:center;
+    color:#fff;
+    margin:auto;
+    padding-top:20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.img-size {
+    height:1000px;
+    width:500px;
+}
+
+.ul-style{
+    padding:10px 10px 10px 10px;
+    margin:0px 30px 30px 30px;
+}
+
+.price-rates-style {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/*/SERVICES -styles*/
+
+/*CONTACT US - styles*/
+
+.contact
+{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /*background: url(images/BG.png);
+    background-size:cover;  */ 
+}
+.contact .content
+{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2
+{
+   font-size: 36px;
+   font-weight: 500;
+   color: #fff; 
+}
+.contact .content p
+{
+   font-weight: 300;
+   color: #fff; 
+}
+.container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactInfo
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactInfo .box
+{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactInfo .box .text 
+{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .contactInfo .box .text h3
+{
+    font-weight: 500;
+    color: #00bcd4;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+.contactForm
+{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.contactForm h2
+{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactForm .inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputBox span
+{ 
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5;
+    color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"]
+{
+    width: 100px;
+    background: #0c0032;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+@media (max-width: 991px)
+{
+   .contact
+   {
+       padding: 50px;
+   } 
+   .container
+   {
+       flex-direction: column;
+   }
+   .container .contactInfo
+   {
+       margin-bottom: 40px;
+   }
+   .container .contactInfo,
+   .contactForm
+   {
+       width: 100%;
+   }
+}
+
+/*/CONTACT US - styles*/
