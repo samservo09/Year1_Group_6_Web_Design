@@ -4,22 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>index.html</title>
+
+    <link rel="stylesheet" href="style.css">
+
     <!--Bootstrap-->
+    <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+   
+    <!--Fonts, Montserrat-->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet"> 
+
+    <!--For the floating button-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
 </head>
-<body>
-     <div class="home-container">
+
+<style>
+    #floating_button {
+        position:fixed;
+        right:10px;
+        bottom:10px;
+        width:50px;
+        height:50px;
+        border-radius: 50%;
+        background:#00bcd4;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+        color:#fff;
+        font-size: 0px;
+        outline:none;
+        cursor: pointer;
+        border: none;
+    }
+
+    #floating_button:active {
+        background: #0C0032;
+    }
+</style>
+<body class="body-bg">
+
+    <!--Floating button to the top-->
+    <a href="#Home"><button id="floating_button"><i class="material-icons">arrow_upward</i>Top</button></a>
+
+
+    <!--HOME PART-->
+    <div id="Home" class="home-container">
         <ul>
             <li><a href="#Home">Home</a></li>
             <li><a href="#About">About</a></li>
-            <li><a href="#Mapping">Mapping</a></li>
             <li><a href="#Services">Services</a></li>
             <li><a href="#ContactUs">Contact Us</a></li> 
-            <img class="logo" src="/images/CoMission_logo.png" alt="CoMission">
+            <img class="logo" src="images/CoMission_logo.png" alt="CoMission">
             <p><span id="date"></span></p>
             <p><span id="time"></span></p>   
         </ul>
@@ -45,209 +91,236 @@
         document.getElementById("date").innerHTML = dt;
         document.getElementById("time").innerHTML = time.toLocaleTimeString();
     </script>
-        
-        <!--about-->
-        
-        <b><h1 style="text-align: center; font-size: 60px; font-family: Montserrat ; color: white; background-color: #0C0032;">Our Team Members</h1></b>
-<body style="background-color: #0C0032 ; color: white; font-family: Montserrat; "> </body>
-<hr>
-<br>
-<br>
-<br>
-<style>
-* {
-  box-sizing: border-box;
-}
+    
+    <!--/HOME-->
 
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-</style>
-</head>
-<br>
-<br>
-<br>
-<br>
-
-<body>
-
-<div class="row">
-  <div class="column">
-    <img src="SERVO-picture(1).jpg" img style="border: 30px; border-radius: 80px; padding: 2px; width: 320px; height: 380px; display: block; margin-left: auto; margin-right: 30px;">
-    <div>
-<img src="SERVO-digital_signature.png" img style="width: 300px; height: 100px; display: block; margin-left: auto; margin-right: 30px;" >
+    <!--ABOUT PART-->
+    <a id="About"><div style="background-color: #70878D; color: white; font-family: Montserrat; text-align: center; font-size: medium;"></a>
+        <h1 class="text-services">Who are We?</h1><br>
+        <h2 style="text-align: center; font-size: xx-large; font-family: Montserrat ; color: #0C0032 ;"><b>Mission Statement</b></h2>
+        <p>Our mission is to provide you with phenomenal quality commissions of graphic design, </p> 
+                essay, video editing, dance tutorials, and web design services at a reasonable price.  
+        <p> To deliver the best services possible to everyone we help. When we say "the best," we mean the best plans, </p>
+                the best help, and the best thinking. To create an all-around organized, imaginative strategy from an
+        <p>idea and to convey it in the most appealing designs. We work hard to ensure</p>
+        <p> that you are satisfied with our services and that they will be of the highest quality. To meet and surpass</p> 
+        <p> the expectations of our customers. In all of these commissions, we try to give high-quality, professional, </p>
+                comprehensive, and creative administrations.</b><br><br><br>
     </div>
-   <style>
-   p.round1 {
-    border: 3px solid white;
-                border-radius: 50px;
-                padding: 5px;
-                width: 300px;
-                height: 50px;
-                text-align: center;
-                padding-left: 10px;
-                font-size: x-large;
-                     display: block;
-                      margin-left: auto;
-                       margin-right: 30px;
-               }
-  </style>
-  <p class="round1"><a href="file:///C:/Users/Niella/Downloads/SERVO-resume.pdf" target="_blank">Servo, Samantha L. </p></a>
-        
-  </div>
-  <div class="column">
-    <img src="Monzon-picture.jpg" img style="border: 30px; border-radius: 80px; padding: 2px; width: 320px; height: 380px; display: block; margin-left: auto; margin-right: auto;">
-    <div>
-        <img src="MONZON- signature.png" img style="width: 300px; height: 100px; display: block; margin-left: auto; margin-right: auto;" >
-            </div>
-   <style>
-   p.round2 {
-    border: 3px solid white;
-                border-radius: 50px;
-                padding: 5px;
-                width: 300px;
-                height: 50px;
-                text-align: center;
-                padding-left: 10px;
-                font-size: x-large;
-                display: block;
-                      margin-left: auto;
-                       margin-right: auto;
-               }
-  </style>
-  <p class="round2"><a href="file:///C:/Users/Niella/Downloads/Monzon-%20resume.pdf" target="_blank">Monzon, Trisha N. </p></a>
-  </div>
-  <div class="column">
-    <img src="CASISON-picture.jpg" img style="border: 30px; border-radius: 80px; padding: 2px; width: 320px; height: 380px; display: block; margin-left: 30px; margin-right: auto;">
-    <div>
-        <img src="CASISON-digital signature.png" img style="width: 300px; height: 100px; display: block; margin-left: 30px; margin-right: auto;" >
-            </div>
-   <style>
-   p.round3 {
-    border: 3px solid white;
-                border-radius: 50px;
-                padding: 5px;
-                width: 300px;
-                height: 50px;
-                text-align: center;
-                padding-left: 10px;
-                font-size: x-large;
-                display: block;
-                      margin-left: 30px;
-                       margin-right: auto;
-               }
-  </style>
-  <p class="round3"><a href=" file:///C:/Users/Niella/Downloads/CASISON-resume.pdf" target="_blank">Casison, Ron I. </p></a>
-  </div>
-</div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<style>
-    * {
-      box-sizing: border-box;
-    }
+    
+    <section style="background-color: #0C0032 ; color: white; font-family: Montserrat; "><br>
+        <h2 style="text-align: center; font-size: xx-large; font-family: Montserrat ; color: #fff;"><b>Our Team Members</b></h2><br>
 
-    .col {
-      float: left;
-      width: 33.33%;
-      padding: 5px;
-    }
-    </style>
-        <div class="row">
-      <div class="col">
-        <img src="photo1637925167 (3).jpeg" img style="border: 30px; border-radius: 80px; padding: 2px; width: 320px; height: 380px; display: block; margin-left: auto; margin-right: -150px">
-        <div>
-            <img src="signature (1).png" img style="width: 300px; height: 100px; display: block; margin-left: auto; margin-right: -150px;" >
-                </div>
-        <style>
-        p.round4 {
-         border: 3px solid white;
-                     border-radius: 50px;
-                     padding: 5px;
-                     width: 300px;
-                     height: 50px;
-                     text-align: center;
-                     padding-left: 10px;
-                     font-size: x-large;
-                     display: block;
-                      margin-left: auto;
-                       margin-right: -150px;
-                    }
-       </style>
-       <p class="round4"><a href="file:///C:/Users/Niella/Downloads/SAYSON-resume.pdf" target="_blank">Sayson, Daniella D. </p></a>
-      </div>
+        <!--Team members-->
+        <div class="container-fluid"><!--container-->
+            <div class="row"><!--1st row-->
+                <div class="col-sm-12 col-lg-4"><!--1st col-->
+                    <img src="about-images/SERVO-picture(1).jpg" img style="border: 30px; border-radius: 80px; padding: 2px; width: 320px; height: 380px; display: block; margin-left: auto; margin-right: 30px;">
+                    <img src="about-images/signatures/SERVO-digital_signature.png" img style="width: 300px; height: 100px; display: block; margin-left: auto; margin-right: 30px;" >
+                    <p class="round1"><a href="resume/SERVO-resume.pdf" target="_blank">Servo, Samantha L. </p></a>  
+                </div><!--/1st col-->
 
-      <div class="col">
-        <img src="IMG_6608.JPG"  img style="border: 30px; border-radius: 80px; padding: 2px; width: 320px; height: 380px; display: block; margin-left: auto; margin-right: -150px;">
-        <div>
-            <img src="BELMONTE-digital signature.png" img style="width: 300px; height: 100px; display: block; margin-left: auto; margin-right: -150px;" >
-                </div>
-        <style>
-        p.round5 {
-         border: 3px solid white;
-                     border-radius: 50px;
-                     padding: 5px;
-                     width: 300px;
-                     height: 50px;
-                     text-align: center;
-                     padding-left: 10px;
-                     font-size: x-large;
-                     display: block;
-                      margin-left: auto;
-                       margin-right: -150px;
-                    }
-                    a:hover {
-             color: white;
-             background-color: transparent;
-             text-decoration: underline;
-                }
-       </style>
-       <p class="round5"><a href="file:///C:/Users/Niella/Downloads/BELMONTE-resume.pdf" target="_blank">Belmonte, Kricel M. </p></a> 
-      </div>
+                <div class="col-sm-12 col-lg-4"><!--2nd col-->
+                    <img src="about-images/Monzon-picture.jpg" img style="border: 30px; border-radius: 80px; padding: 2px; width: 320px; height: 380px; display: block; margin-left: auto; margin-right: auto;">
+                    <img src="about-images/signatures/MONZON- signature.png" img style="width: 300px; height: 100px; display: block; margin-left: auto; margin-right: auto;" >
+                    <p class="round2"><a href="resume/Monzon- resume.pdf" target="_blank">Monzon, Trisha N. </p></a>
+                </div><!--/2nd col-->
+
+                <div class="col-sm-12 col-lg-4"><!--3rd col-->
+                    <img src="about-images/CASISON-pic 1x1.png" img style="border: 30px; border-radius: 80px; padding: 2px; width: 320px; height: 380px; display: block; margin-left: 30px; margin-right: auto;">
+                    <img src="about-images/signatures/CASISON-digital signature.png" img style="width: 300px; height: 100px; display: block; margin-left: 30px; margin-right: auto;" >
+                    <p class="round3"><a href="resume/CASISON-resume.pdf" target="_blank">Casison, Ron I. </p></a>
+                </div><!--/3rd col-->
+            </div><br><br><br><!--/1st row-->
+
+            <div class="row"><!--2nd row-->
+                <div class="col-sm-12 col-lg-4"><!--1st col-->
+                    <img src="about-images/SAYSON-PIC.jpeg" img style="border: 30px; border-radius: 80px; padding: 2px; width: 320px; height: 380px; display: block; margin-left: auto; margin-right: -150px">
+                    <img src="about-images/signatures/SAYSON-digital signature.png" img style="width: 300px; height: 100px; display: block; margin-left: auto; margin-right: -150px;" >
+                    <p class="round4"><a href="resume/SAYSON-resume.pdf" target="_blank">Sayson, Daniella D. </p></a>
+                </div><!--1st col-->
+
+                <div class="col-sm-12 col-lg-4"><!--2nd col-->
+                    <img src="about-images/IMG_6608.JPG"  img style="border: 30px; border-radius: 80px; padding: 2px; width: 320px; height: 380px; display: block; margin-left: auto; margin-right: -150px;">
+                    <img src="about-images/signatures/BELMONTE-digital signature.png" img style="width: 300px; height: 100px; display: block; margin-left: auto; margin-right: -150px;" >
+                    <p class="round5"><a href="resume/BELMONTE-resume.pdf" target="_blank">Belmonte, Kricel M. </p></a> 
+                </div><br> <br><!--2nd col-->
+
+               <p class="round6 btn"><a href="https://www.facebook.com/profile.php?id=100071243263490" target="_blank">Get to know our professor!</p></a> 
+            </div><!--/2nd row-->
+        </div><!--/container-->
+        <br>
+    </section><!--/ABOUT PART-->
+
+    <!--SERVICES PART-->
+    <a id="Services"><div style="background-color: #70878D;"></a>
+    <h1 class="text-services">Services</h1><br>
+
+    <div class="container-fluid"><!--container-->
+        <div class="row"><!--row-->
+            <div class="col-sm-12"><!--col-all-->
+                <div id="carousel_controls" class="carousel slide" data-ride="carousel"><!--carousel-->
+                    <div class="carousel-inner"><!--carousel inner-->
+
+                    <!--CAROUSEL ITEMS-->
+                        <div class="carousel-item active"> <!--1st carousel item-->
+                            <div class="container" style="padding-left: 75px;"><!--1st inner container-->
+                                <div class="row"><!--row-->
+
+                                <!--CARDS-->
+                                <div class="col-sm-12 col-lg-4"><!--1st col-->
+                                    <div class="card card-style img-rounded" style="width: 18rem;"><!--1st card-->
+                                        <img src="card-images/first card - small.jpg" class="card-img-top" alt="Digital Art">
+                                        <div class="card-body"><!--card body--> 
+                                            <h5 class="card-title">Digital Art</h5>
+                                            <p class="card-text">Need an illustration? How about portraits? Check out our digital arts!</p>
+                                            <a href="services-page.html#Digital-Art" class="btn btn-primary margin-left">View Project</a>
+                                        </div><!--/card body--> 
+                                    </div><!--/1st card-->
+                                </div><!--/1st col-->
+
+
+                                    <div class="col-sm-12 col-lg-4"><!--2nd col-->
+                                        <div class="card card-style img-rounded" style="width: 18rem;"><!--2nd card-->
+                                            <img src="card-images/info-1 - small.png" class="card-img-top" alt="Digital Posters">
+                                            <div class="card-body"><!--card body--> 
+                                                <h5 class="card-title">Digital Posters</h5>
+                                                <p class="card-text">Need digital posters created for school? How about for your business?</p>
+                                                <a href="services-page.html#Digital-Poster" class="btn btn-primary margin-left">View Project</a>
+                                            </div><!--/card body--> 
+                                        </div><!--/2nd card-->
+                                    </div><!--/2nd col-->
+
+                                    <div class="col-sm-12 col-lg-4"><!--3rd col-->
+                                        <div class="card card-style img-rounded" style="width: 18rem;"><!--3rd card-->
+                                            <img src="card-images/Web design 1 - small.png" class="card-img-top" alt="Website Design">
+                                            <div class="card-body"><!--card body--> 
+                                                <h5 class="card-title">Website Design</h5>
+                                                <p class="card-text">Do you want to launch that business successfully? You need a website design!</p>
+                                                <a href="services-page.html#Website-Design" class="btn btn-primary margin-left">View Project</a>
+                                            </div><!--/card body--> 
+                                        </div><!--/3rd card-->
+                                    </div><!--/3rd col-->
+                                </div><!--/row-->
+                            </div><!--/1st inner container-->
+                        </div><!--/carousel item-->
+
+                    <!--SECOND CAROUSEL ITEM-->
+                        <div class="carousel-item"> <!--2nd carousel item-->
+                            <div class="container" style="padding-left: 75px;"><!--2nd inner container-->
+                                <div class="row"><!--row-->
+
+                                <!--CARDS-->
+                                    <div class="col-md-6 col-lg-4"><!--1st col-->
+                                        <div class="card card-style img-rounded" ><!--1st card-->
+                                            <img src="card-images/video_card.png" class="card-img-top" alt="...">
+                                            <div class="card-body"><!--card body--> 
+                                                <h5 class="card-title">Video Making Tutorial</h5>
+                                                <p class="card-text">Have a lot of performance tasks at school? Do you want to have a video project?</p>
+                                                <a href="services-page.html#Video-Making-Tutorial" class="btn btn-primary margin-left">View Project</a>
+                                            </div><!--/card body--> 
+                                        </div><!--/1st card-->
+                                    </div><!--/1st col-->
+
+                                    <div class="col-md-6 col-lg-4"><!--2nd col-->
+                                        <div class="card card-style img-rounded"><!--2nd card-->
+                                            <img src="card-images/dance_tutorial_card(1).png" class="card-img-top" alt="...">
+                                            <div class="card-body"><!--card body--> 
+                                                <h5 class="card-title">Dance Tutorial</h5>
+                                                <p class="card-text">Have an upcoming awesome performance? Hit us up for that tutorial!</p>
+                                                <a href="services-page.html#Dance-Tutorial" class="btn btn-primary margin-left">View Project</a>
+                                            </div><!--/card body--> 
+                                        </div><!--/2nd card-->
+                                    </div><!--/2nd col-->
+
+                                    <div class="col-sm-12 col-lg-4"><!--3rd col-->
+                                        <div class="card card-style img-rounded"><!--3rd card-->
+                                            <img src="card-images/writing - small.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body"><!--card body--> 
+                                                <h5 class="card-title">Essay Creation</h5>
+                                                <p class="card-text">Need to ace that paper? Don't worry, we still got you! Check it out!</p>
+                                                <a href="services-page.html#Essay-Creation" class="btn btn-primary margin-left">View Project</a>
+                                            </div><!--/card body--> 
+                                        </div><!--/3rd card-->
+                                    </div><!--/3rd col-->
+
+                                </div><!--/row-->
+                            </div><!--/2nd inner container-->
+                        </div><!--/carousel item-->
+
+                    </div><!--/carousel inner-->
+
+                    <!--Controls-->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel_controls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel_controls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    <!--/Controls-->
+
+                </div><!--/carousel-->
+            </div><!--/col-all-->
+        </div><!--/row-->
+    </div><!--/container-->
+       <br><br><br>
     </div>
+       <!--/SERVICES PART-->
 
-<br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-<style>
-    p.round6 {
-     border: 10px; color :#0C0032; background-color: #70878D;
-                 border-radius: 50px;
-                 padding: 5px;
-                 width: 800px;
-                 height: 50px;
-                 text-align: center;
-                 padding-left: 10px;
-                 font-size: xx-large;
-                 margin: auto;
-    }
-    a:link {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
-    }
-   </style>
-   <p class="round6"> <a href="https://www.facebook.com/profile.php?id=100071243263490" target="_blank">Get to know our professor!</p></a> 
-    <br>
-    <br>
-    <br>
-    <br>
+       <!--CONTACTS PART-->
+
+       <a id="ContactUs"><section class="contact"></a>
+        <h1 class="text-services"><a id="ContactUs">Talk to us!</a></h1><br>
+        <div class="content">
+            <p>This section is for you to interact with us regarding with your concerns and clarifications. Your responses are immensely appreciated by the workers of CoMission. Hoping that you explored our offers to support you within your numerous activites. Thank you and Have a Nice Day.</p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="text">
+                        <h3>Locations:</h3>
+                        <p>Manila, Philippines<br>City of Dasmarinas, Cavite, Philippines<br></p>               
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="text">
+                        <h3>Contact Numbers:</h3>
+                        <p>09684365497<br>09213655627<br>09458977878<br>09456373717<br>09684365497<br></p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="text">
+                        <h3>Emails:</h3>
+                        <p><a href="mailto:belmonteisel@gmail.com"style="color: white">belmonteisel@gmail.com</a><br><a href="mailto:cronhale@gmail.com"style="color: white">cronhale@gmail.com</a><br><a href="mailto:samanthaservo09@gmail.com"style="color: white">samanthaservo09@gmail.com</a><br><a href="mailto:saysondaniella.ds24@gmail.com"style="color: white">saysondaniella.ds24@gmail.com</a><br><a href="mailto:trishaannmonzon@gmail.com"style="color: white">trishaannmonzon@gmail.com</a></p>               
+                    </div>
+                </div>            
+            </div>
+        <div class="contactForm">
+             <form>
+                <h2>Send Message:</h2>
+                <div class="inputBox">
+                    <input type="text" name="" required="required">
+                    <span>Full Name:</span>
+                </div>
+                <div class="inputBox">
+                    <input type="text" name="" required="required">
+                    <span>Email:</span>
+                </div>
+                <div class="inputBox">
+                    <textarea required="required"></textarea>
+                    <span>Type Your Message:</span>
+                </div>
+                <div class="inputBox">
+                    <input type="submit" name="" value="Send">
+                </div>
+             </form>
+        </div>
+    </section> 
+       <!--/CONTACTS PART-->
+
+     
 </body>
 </html>
